@@ -5,6 +5,11 @@
 @import url("header.css");
 @import url("visual.css");
 @import url("recommend.css");
+@import url("tour.css");
+@import url("ticket.css");
+@import url("live.css");
+@import url("today.css");
+@import url("event.css");
 @import url("footer.css");
 
 * {
@@ -25,8 +30,8 @@ img {
   vertical-align: middle;
 }
 
-button {
-  font-family: "Pretendard", sans-serif;
+button{
+  font-family: "pretendard", sans-serif;
 }
 
 html {

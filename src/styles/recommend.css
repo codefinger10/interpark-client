@@ -3,16 +3,18 @@
   padding-top: 0;
   padding-bottom: 90px;
 
-  background-color: yellow;
+  background-color: none;
 }
 .recommend-inner {
   position: relative;
   width: 1280px;
   margin: 0 auto;
 }
+
 .recommend-header {
   position: relative;
 }
+
 .recommend-title {
   position: relative;
   margin-bottom: 10px;
@@ -21,6 +23,7 @@
   color: #000;
   text-align: center;
 }
+
 .recommend-txt {
   position: relative;
   display: block;
@@ -36,7 +39,7 @@
 .recommend-category {
   position: relative;
   display: flex;
-  /* 가운데 */
+  /* 가운데 정렬 */
   justify-content: center;
 }
 
@@ -76,7 +79,7 @@
   position: relative;
   height: 425px;
   margin-top: 23px;
-  background-color: yellowgreen;
+  background-color: none;
 }
 /* 곽민성 코딩 컨벤션 */
 .recommend-slide-item {
@@ -133,12 +136,14 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .recommend-good-info-price b {
   position: relative;
   font-size: 2rem;
   font-weight: 700;
   color: #ef3e43;
 }
+
 .recommend-good-info-price em {
   position: relative;
   font-size: 2rem;
@@ -151,7 +156,7 @@
   font-size: 1.5rem;
   color: #111;
   word-break: break-all;
-  /* 2줄이상 말줄임 */
+  /*2줄이상  말줄임 */
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -161,4 +166,32 @@
 
 .recommend-footer {
   position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.recommend-footer-bt {
+  position: relative;
+  border: 1px solid #e5e5e5;
+  border-radius: 44px;
+  line-height: 42px;
+  background-color: white;
+  cursor: pointer;
+  padding: 0 25px;
+}
+
+.recommend-footer-bt::after {
+  content: "";
+  display: inline-block;
+  width: 0.7rem;
+  height: 1.1rem;
+  margin-left: 0.7rem;
+  background: url("") no-repeat 50%;
+}
+.recommend-slide-allimg {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/allright.svg") no-repeat 50%;
+  background-size: cover;
 }

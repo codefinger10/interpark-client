@@ -91,7 +91,9 @@ function Recommend() {
       <InnerArea>
         <div className="recommend-header">
           <h2 className="recommend-title">쇼핑추천</h2>
-          <span className="recommend-txt">할인이 쎄다! 지금, 특가 상품을 확인하세요.</span>
+          <span className="recommend-txt">
+            할인이 쎄다! 지금, 특가 상품을 확인하세요.
+          </span>
         </div>
 
         <div className="recommend-main">
@@ -135,7 +137,12 @@ function Recommend() {
                 return (
                   <SwiperSlide key={index}>
                     {index === htmlTag.length - 1 ? (
-                      <a href={item.url}>바로가기</a>
+                      <div className="swiper-slide">
+                        <a href="{item.url}" className-recommend-slide-all>
+                          <i></i>
+                          전체보기
+                        </a>
+                      </div>
                     ) : (
                       <div className="recommend-slide-item">
                         <a href={item.url} className="recommend-link">
@@ -151,7 +158,9 @@ function Recommend() {
                                 </span>
                               </li>
                               <li>
-                                <p className="recommend-good-info-desc">{item.desc}</p>
+                                <p className="recommend-good-info-desc">
+                                  {item.desc}
+                                </p>
                               </li>
                             </ul>
                           </div>
